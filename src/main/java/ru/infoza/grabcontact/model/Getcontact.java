@@ -19,8 +19,7 @@ public class Getcontact {
     @Column(name = "phone", length = 50)
     private String phone;
 
-    @Lob
-    @Column(name = "name")
+    @Column(name = "name", columnDefinition = "text")
     private String name;
 
     @Column(name = "region_source", length = 50)

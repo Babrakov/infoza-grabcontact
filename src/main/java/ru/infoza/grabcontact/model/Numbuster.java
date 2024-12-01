@@ -25,8 +25,7 @@ public class Numbuster {
     @Column(name = "phone", length = 11)
     private String phone;
 
-    @Lob
-    @Column(name = "name")
+    @Column(name = "name", columnDefinition = "text")
     private String name;
 
 }

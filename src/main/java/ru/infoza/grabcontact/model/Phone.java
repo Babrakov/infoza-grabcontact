@@ -35,8 +35,7 @@ public class Phone {
     @Column(name = "town_id", columnDefinition = "smallint UNSIGNED")
     private Integer townId;
 
-    @Lob
-    @Column(name = "tx_location")
+    @Column(name = "tx_location", columnDefinition = "text")
     private String txLocation;
 
     @Column(name = "vc_email")
@@ -48,8 +47,7 @@ public class Phone {
     @Column(name = "source_id")
     private Integer sourceId;
 
-    @Lob
-    @Column(name = "tx_rem")
+    @Column(name = "tx_rem", columnDefinition = "text")
     private String txRem;
 
     @Column(name = "bn_hash", length = 16)
